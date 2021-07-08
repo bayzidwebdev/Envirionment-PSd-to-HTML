@@ -1,0 +1,957 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans 400';
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	font-style: normal;
+}
+/*
+===========================
+reusebale componebts
+===========================
+*/
+.center-heading{
+	padding-top: 80px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.center-heading h1{
+	font-family: 'Montserrat 700';
+	font-style: italic;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+.center-heading h1 span{
+	color: #73b21a;
+}
+.center-heading .line-1{
+	
+width: 0%;
+	
+margin: auto;
+	
+margin-bottom: 8px;
+	
+opacity: 1;
+	
+height: 2px;
+
+color: #73b21a;
+
+transition: 0.8s all ease-in-out;
+
+}
+.center-heading .line-2{
+
+width: 0%;
+
+margin: auto;
+
+opacity: 1;
+
+height: 2px;
+
+color: #73b21a;
+
+transition: 0.8s all ease-in-out;
+
+}
+.center-heading p{
+	font-family: 'Open Sans 400';
+	font-size: 15px;
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/* hover  */
+.welcome:hover .center-heading .line-1{
+	width: 10%;
+}
+.welcome:hover .center-heading .line-2{
+	width: 8%;
+}
+.our-service:hover .center-heading .line-1{
+	width: 10%;
+}
+.our-service:hover .center-heading .line-2{
+	width: 8%;
+}
+.meet-our-team:hover .center-heading .line-1{
+	width: 10%;
+}
+.meet-our-team:hover .center-heading .line-2{
+	width: 8%;
+}
+.gallery:hover .center-heading .line-1{
+	width: 10%;
+}
+.gallery:hover .center-heading .line-2{
+	width: 8%;
+}
+.news:hover .center-heading .line-1{
+	width: 10%;
+}
+.news:hover .center-heading .line-2{
+	width: 8%;
+}
+
+
+.br-f{
+	border-radius: 35px;
+}
+/*
+===========================
+reusebale componebts
+===========================
+*/
+
+/*
+===========================
+Basic Setup
+===========================
+*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+span,
+label {
+	display: inline-block;
+}
+
+ul li {
+	list-style: none;
+}
+
+a,
+a:focus {
+	text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus {
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+}
+
+a {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+==================================
+Font Size
+==================================
+*/
+.fs-55 {
+	font-size: 55px;
+}
+.fs-48{
+	font-size: 48px;
+}
+.fs-35 {
+	font-size: 35px;
+}
+
+.fs-27 {
+	font-size: 27px;
+}
+
+.fs-24 {
+	font-size: 24px;
+}
+
+.fs-20 {
+	font-size: 20px;
+}
+
+.fs-18 {
+	font-size: 18px;
+}
+
+.fs-17 {
+	font-size: 17px;
+}
+
+.fs-16 {
+	font-size: 16px;
+}
+
+.fs-15 {
+	font-size: 15px;
+}
+
+.fs-14 {
+	font-size: 14px;
+}
+.fs-13 {
+	font-size: 13px;
+}
+.tt-c{
+	text-transform: capitalize;
+}
+.tt-u{
+	text-transform: uppercase;
+}
+/*
+==================================
+Font Color
+==================================
+*/
+.t-c-ff {
+	color: #FFFFFF;
+}
+
+.t-c-33 {
+	color: #333333;
+}
+
+.t-c-73 {
+	color: #73b21a;
+}
+
+.t-c-66 {
+	color: #666666;
+}
+
+.t-c-97 {
+	color: #979797;
+}
+
+/*
+==================================
+BG Color
+==================================
+*/
+.bg-c-73 {
+	background: #73b21a;
+}
+
+.bg-c-ff {
+	background: #FFFFFF;
+}
+
+.bg-c-4b {
+	background: #4B7017;
+}
+
+.bg-c-40 {
+	background: #406E00;
+}
+
+.bg-c-15 {
+	background: #151515;
+}
+.bg-c-f9{
+	background: #f9f9f9;
+}
+.bg-c-0e{
+	background: #0e0e0e;
+}
+/*
+===================================
+header css
+===================================
+*/
+.header-top ul li{
+
+float: left;
+
+margin-left: 20px;
+}
+.header-top-r{
+	
+display: flex;
+	
+justify-content: flex-end;
+}
+.header-top-r ul li .btn-ap:hover{
+border: none;
+background: linear-gradient(#fff, rgb(209, 208, 208));
+
+transition: 0.4s all ease-in-out;
+}
+.header-top-r ul li .btn-ap{
+
+padding: 0;
+
+background: #fff;
+
+padding: 3px 10px;
+
+color: #000;
+
+border-radius: 10px;
+
+}
+.header-bottom ul li{
+	
+margin-left: 10px;
+}
+/*
+===================================
+header css end
+===================================
+*/
+
+/*
+===================================
+banner css start
+===================================
+*/
+.banner{
+	background-image: url(../images/banner1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* min-height: 65vh; */
+	position: relative;
+}
+.banner::before{
+	content: "";
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b21a+0,73b21a+0&0+0,1+100 */
+	background: -moz-linear-gradient(top,  rgba(115,178,26,0) 0%, rgba(115,178,26,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0073b21a', endColorstr='#73b21a',GradientType=0 ); /* IE6-9 */
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	opacity: 0.8;
+}
+.ban-img{
+	z-index: 1;
+}
+.hero{
+
+position: absolute;
+
+bottom: -1px;
+
+left: 0;
+}
+.hero img{
+	
+min-width: 40%;
+}
+.ban{
+	
+position: relative;
+	
+min-height: 80vh;
+	
+align-items: center;
+}
+
+/*
+===================================
+banner css end
+===================================
+*/
+/*
+===================================
+welcome css strat
+===================================
+*/
+.welcome-box{
+
+text-align: center;
+
+position: relative;
+
+padding-bottom: 50px;
+
+transition: 0.3s all ease-in-out;
+}
+.read-btn{
+	
+position: absolute;
+	
+left: 50%;
+	
+transform: translate(-50%, 75%);
+	
+border-radius: 35px;
+	
+color: #fff;
+	
+text-transform: uppercase;
+
+transition: 0.3s all ease-in-out;
+}
+.welcome-box:hover{
+	background-color: #73b21a;
+}
+.welcome-box:hover .read-btn{
+	background-color: #4B7017;
+}
+.read-btn:hover{
+	background-color: #4B7017;
+	color: #fff;
+}
+/*
+===================================
+welcome css end
+===================================
+*/
+/*
+===================================
+service css strat
+===================================
+*/
+.serv{
+	align-items: center;
+	z-index: 999999999;
+}
+.list-service{
+overflow: hidden;
+}
+.list-1{
+float: left;
+}
+.list-2{
+float: left;
+}
+.service{
+	background-image: url(../images/banner2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.service::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151515+0,151515+100&0.55+0,0.55+100 */
+background: -moz-linear-gradient(top,  rgba(21,21,21,0.55) 0%, rgba(21,21,21,0.55) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(21,21,21,0.55) 0%,rgba(21,21,21,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(21,21,21,0.55) 0%,rgba(21,21,21,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c151515', endColorstr='#8c151515',GradientType=0 ); /* IE6-9 */
+
+opacity: 1;
+left: 0;
+bottom: 0;
+}
+.serv-p{
+	z-index: 99999999999999999999999;
+}
+.l-img{
+	opacity: 1;
+	width: 45%;
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+/*
+===================================
+service css end
+===================================
+*/
+
+/*
+===================================
+our service css strat
+===================================
+*/
+
+.osi-1::after{
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 0px;
+	background: #73b21a;
+	top: -5%;
+	left: -10px;
+	transition: 0.4s all ease-in-out;
+}
+.osi-1::before{
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 3px;
+	background: #73b21a;
+	top: -5%;
+	left: -10px;
+	transition: 0.4s all ease-in-out;
+}
+.osi-1{
+	position: relative;
+}
+.osi-1:hover::after{
+	height: 60px;
+}
+.osi-1:hover::before{
+	width: 60px;
+}
+.osi{
+
+align-items: center;
+
+width: 100%;
+position: relative;
+}
+.osi-1{
+
+display: flex;
+
+align-items: center;
+
+padding: 30px 15px;
+
+transition: 0.4s all ease-in-out;
+}
+.osi-1 .icon-osi{
+
+
+background: #73b21a;
+
+border-radius: 50%;
+
+margin-right: 10px;
+
+transition: 0.4s all ease-in-out;
+}
+.osi-t span{
+	display: inline-block;
+	border: 1px dotted #73b21a;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	transition: 0.4s all ease-in-out;
+}
+.osi-1 .icon-osi i{
+	font-size: 30px;
+	left: 50%;
+	padding: 10px 10px;
+	transition: 0.4s all ease-in-out;
+}
+.osi-1 h1{
+	transition: 0.4s all ease-in-out;
+}
+.osi-1 p{
+	transition: 0.4s all ease-in-out;
+}
+.osi-1:hover .icon-osi i{
+	color: #73b21a;
+}
+.osi-1:hover .icon-osi{
+	background: #fff;
+}
+.osi-1:hover{
+	background: #73b21a;
+}
+.osi-1:hover h1{
+	color: #fff;
+}
+.osi-1:hover span{
+	border: 1px dotted #fff;
+	
+}
+.osi-1:hover p{
+	color: #fff;
+}
+/*
+===================================
+our service css end
+===================================
+*/
+
+/*
+===================================
+counter css strat
+===================================
+*/
+
+.icon-counter{
+	
+width: 60px;
+	
+height: 60px;
+	
+margin: auto;
+	
+border: 2px solid #fff;
+	
+border-radius: 50px;
+	
+display: flex;
+	
+align-items: center;
+	
+justify-content: center;
+}
+.counter-part{
+	background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../images/banner3.jpg);
+}
+/*
+===================================
+counter css end
+===================================
+*/
+
+/*
+===================================
+meet css strat
+===================================
+*/
+.mmet-icon {
+	width: 100%;
+	height: 0px;
+	transition: 0.4s all ease-in-out;
+	
+}
+.icon-all{
+	width: 50%;
+}
+.meet-men::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	transition: 0.4s all ease;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b21a+0,73b21a+0&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(115,178,26,0) 0%, rgba(115,178,26,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0073b21a', endColorstr='#73b21a',GradientType=0 ); /* IE6-9 */
+
+}
+.meet-men img{
+width: 100%;
+
+}
+.meet-item{
+	border: 1px solid #979797;
+	transition: 0.4s all ease-in-out;
+}
+.meet-item:hover .mmet-icon{
+	height: 50px;
+}
+.meet-item:hover .meet-men::before{
+	height: 100%;
+}
+.meet-item:hover{
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);
+}
+/*
+===================================
+meet css end
+===================================
+*/
+/*
+===================================
+gallery css strat
+===================================
+*/
+.img-overlay{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b21a+0,73b21a+0&0+0,1+100 */
+	background: -moz-linear-gradient(top,  rgba(115,178,26,0) 0%, rgba(115,178,26,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0073b21a', endColorstr='#73b21a',GradientType=0 ); /* IE6-9 */
+width: 100%;
+height: 100%;
+position: absolute;
+transform: scale(0);
+transition: 0.4s all ease-in-out;
+}
+.gallery-img:hover .img-overlay{
+	transform: scale(1);
+}
+
+/*
+===================================
+gallery css end
+===================================
+*/
+
+
+/*
+===================================
+testimonial css strat
+===================================
+*/
+.testimonial{
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/banner4.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+.client-img{
+overflow: hidden;
+}
+.client-img img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+border: 4px solid #fff;
+}
+/*
+===================================
+testimonial css end
+===================================
+*/
+
+/*
+===================================
+nws css sratr
+===================================
+*/
+
+.news-style{
+
+border: 2px solid #e0e0e0;
+overflow: hidden;
+}
+.news-img{
+
+width: 100%;
+overflow: hidden;
+}
+.news-img img{
+	transition: 0.4s all ease-in-out;
+}
+.news-style:hover .news-img img{
+	transform: scale(1.2);
+}
+.news-title{
+
+border-bottom: 2px solid #e0e0e0;
+}
+.news-comment{
+	
+display: flex;
+	
+justify-content: space-between;
+}
+.icon-com{
+	
+display: flex;
+	
+justify-content: space-between;
+	
+width: 40px;
+}
+.img-overly-date{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b21a+0,73b21a+0&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(115,178,26,0) 0%, rgba(115,178,26,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(115,178,26,0) 0%,rgba(115,178,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0073b21a', endColorstr='#73b21a',GradientType=0 ); /* IE6-9 */
+width: 100%;
+height: 0;
+bottom: 0;
+transition: 0.4s all ease-in-out;
+}
+.date p{
+	
+position: absolute;
+
+left: 0;
+	
+bottom: 0;
+	
+width: 0px;
+	
+height: 50px;
+	
+background: #4B7017;
+	
+text-align: center;
+	
+line-height: 50px;
+	
+border-radius: 0px  40px 0px 0px;
+
+transition: 0.4s all ease-in-out;
+
+display: inline-block;
+
+opacity: 0;
+}
+.news-style:hover .img-overly-date{
+height: 100%;
+}
+.news-style:hover .date p{
+	
+	width: 140px;
+	opacity: 1;
+
+}
+/*
+===================================
+nws css end
+===================================
+*/
+
+
+/*
+===================================
+footer css sratr
+===================================
+*/
+.fot-bot-dag{
+	border-bottom: 1px solid #999;
+}
+.footer-one{
+
+}
+.footer-icon i{
+	transition: 0.4s all ease-in-out;
+	cursor: pointer;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	text-align: center;
+	line-height: 30px;
+}
+.footer-icon i:hover{
+color: #73b21a;
+border-color: #73b21a;
+}
+.footer-two{
+
+}
+.footer-two ul{
+	margin-left: 20px;
+}
+.footer-two ul li{
+	list-style: disc !important;
+	cursor: pointer;
+}
+.footer-two ul li::marker{
+	
+color: #fff;
+}
+.footer-two ul li a{
+	color: #fff;
+}
+.footer-two ul li a:hover{
+	color: #73b21a;
+}
+.footer-two ul li a:hover .footer-two ul li::marker{
+	color: #73b21a !important;
+}
+.footer-three{
+
+}
+.post-img img{
+
+max-width: 90%;
+}
+.post-d a{
+	
+}
+.post-d a:hover{
+	color: #73b21a;
+}
+.footer-four{
+
+}
+.open-time{
+	border-bottom:2px solid #fff;
+}
+.open-time p{
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.open-time:hover{
+	border-bottom: 2px solid #73b21a;
+}
+.open-time:hover p{
+	color: #73b21a;
+}
+.footer-menu ul li a{
+	color: #fff;
+}
+.footer-menu ul li a:hover{
+	color: #73b21a;
+}
+/*
+===================================
+footer css edn
+===================================
+*/
+
+/* owl  */
+.owl-carousel .owl-item img {
+    display: block;
+	width: 80px;
+    margin: auto;
+}
+.owl-dots{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 85%;
+}
+.owl-dot span{
+
+width: 10px;
+
+height: 10px;
+
+background: #fff;
+
+border-radius: 50px;
+
+margin: 0 3px;
+}
+.owl-dot.active span{
+width: 10px;
+
+height: 10px;
+
+background: #73b21a;
+
+border-radius: 50px;
+}
+
+
+
+
+
+
+
